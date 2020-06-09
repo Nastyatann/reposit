@@ -1,3 +1,32 @@
 body * {
-  outline: 1px solid lightgrey;
+ // outline: 1px solid lightgrey;
+}
+
+body {
+  font-size: 0;
+}
+
+.text-align {
+  text-align: center;
+  width: 443px;
+  height: 469px;
+  margin: 26px 20px 203px 19px;
+  background-color: #FFF;
+}
+ 
+.inline-block {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 34px;
+}
+ 
+.rectangular {
+  width: 153px;
+  height: 116px;
+  background-color: #588924;
+}
+
+.square {
+ width: 147px;
+ height: 147px;
 }
