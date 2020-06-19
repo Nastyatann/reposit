@@ -2,3 +2,97 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  height: 200px;
+  background-image: url(./img/oranges.jpg);
+  border-top: 3px solid #ffa500;
+  border-bottom: 3px solid  #ffa500;
+
+}
+.slider-container {
+  height: 100%;
+}
+
+.slider-line {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 7px 15px;
+}
+
+.slider-line.first {
+  background-color: rgb(90, 85, 85);
+  margin-bottom: 20px;
+  color: rgb(223, 161, 46);
+}
+
+.slider-line.second {
+  background-color: rgb(223, 161, 46);
+  color: rgb(90, 85, 85);
+}
+
+.top {
+  margin-bottom: 5px;
+  justify-content: space-between;
+}
+
+.top-right-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-left-block {
+  display: flex;
+}
+
+.icon-rabbit {
+  margin-right: 20px;
+  max-width: 50px;
+}
+
+
+.top-header {
+  margin: auto 0;
+  text-align: center;
+}
+
+.header-line.first {
+  color: rgb(223, 161, 46);
+  
+}
+
+.header-line.second {
+  color: rgb(90, 85, 85);
+  text-transform: uppercase;
+}
+
+.icons {
+  display: block;
+  margin: 0 auto;
+  max-width: 20px;
+} 
+
+.icon-content {
+  color: #808080;
+}
+
+.content {
+  padding-left: 15px;
+}
+
+.container-news_columns {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: rgb(90, 85, 85);
+}
+
+.news-column {
+  max-width: 23%;
+}
