@@ -11,7 +11,7 @@ body * {
 
 .slider {
   height: 200px;
-  background-image: url(./img/oranges.jpg);
+  background-image: url(../img/Oranges.jpg);
   border-top: 3px solid #ffa500;
   border-bottom: 3px solid  #ffa500;
 
@@ -87,12 +87,59 @@ body * {
 }
 
 .container-news_columns {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding-bottom: 15px;
+  
+}
+
+.bottom-line {
+  width: 100%;
+  height: 1px;
   border-bottom: rgb(90, 85, 85);
 }
 
 .news-column {
   max-width: 23%;
+  max-height: 145px;
+  overflow: hidden;
 }
+
+.container_meet-team {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  
+}
+
+.meet-team_header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  color:rgb(223, 161, 46 );
+  font-size: 24px;
+}
+
+.meet-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.team {
+  color: rgb(223, 161, 46);
+}
+
+.meet {
+  display: flex;
+}
+
+.icon-team {
+  max-width: 150px;
+  border: 4px solid #c5850e;
+  border-radius: 50%;
+}
+
