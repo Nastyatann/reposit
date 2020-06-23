@@ -8,36 +8,36 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <div class="container top">
-      <div class="top-left-block">
+    <div class="header container">
+      <div class="logo">
         <div>
           <img class="icon-rabbit" src="./img/rabbit.png"> 
         </div>
         <div class="top-header">
-          <div class="first header-line">orange</div>
-          <div class="second header-line">rabbit</div>
+          <div class="first header__line">orange</div>
+          <div class="second header__line">rabbit</div>
         </div>
       </div>
-      <div class="top-right-block">
+      <div class="nav">
         <div class="home content">          
           <img class="icons" src="./img/home.png" alt="home">
-          <div class="icon-content">home</div>
+          <a class="icon-content" href=''>home</a>
         </div>
         <div class="about content">
           <img class="icons" src="./img/about.png" alt="about">
-          <div class="icon-content">about</div>  
+          <a class="icon-content" href=''>about</a>  
         </div>
         <div class="work content">
           <img class="icons" src="./img/work.png" alt="work">
-          <div class="icon-content">work</div>
+          <a class="icon-content" href=''>work</a>
         </div>
         <div class="blog content">
           <img class="icons" src="./img/blog.png" alt="blog">
-          <div class="icon-content">blog</div>
+          <a class="icon-content" href=''>blog</a>
           </div>
         <div class="contact content">
           <img class="icons" src="./img/contact.png" alt="contact">
-          <div class="icon-content">contact</div>  
+          <a class="icon-content" href=''>contact</a>  
         </div>
       </div>
     </div>
@@ -49,52 +49,69 @@
         </div>
       </div>
     </div>
-    <div class="news container">
-      <div class="container-news_columns">
-        <div class="first news-column">
+    <div class="news">
+    <div class="container">
+      <div class="news-columns">
+        <div class="news-column__item">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div>
-        <div class="second news-column">
+        <div class="news-column__item">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div>
-        <div class="third news-column">
+        <div class="news-column__item">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div>
-        <div class="fourth news-column">
+        <div class="news-column__item">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div> 
       </div>   
     </div>
-    <div class="bottom-line"></div>
+    </div>
     <div class="meet container">
-      <div class="container_meet-team">
-        <div class="meet-team_header">
+      <div class="meet-team__header">
           Meet the team
-        </div>
-        <div class="meet-team">
-          <div class="meet designer">
-            Hoof <p class="team">- Lead Designer</p>
+      </div>
+      <div class="meet-team">
+        <div class="team-items">
+          <div class="meet-team__item">
+            <span>Hoof</span> 
+            <span class="team">- Lead Designer</span>
           </div>
           <img class="icon-team" src="./img/horse.jpg">
           <div class="meet_text">Hoof is our the most talented designer. However he's not the talkative type and i would advise not getting on the wrong side of him.</div>
         </div>
-        <div class="meet-team">
-          <div class="meet ceo">
-            Nibs <p class="team">- Ceo/Director</p>
+        <div class="team-items">
+          <div class="meet-team__item">
+            <div>Nibs</div> <div class="team">- Ceo/Director</div>
           </div>
           <img class="icon-team" src="./img/rabbit.jpg">
           <div class="meet_text">Nibs is our go to woman. She's the ceo/director of orange rabbit and runs fast when she has too</div>
         </div>
-        <div class="meet-team">
-          <div class="meet developer">
-            Squawk <p class="team">- Developer</p>
+        <div class="team-items">
+          <div class="meet-team__item">
+            <div>Squawk</div> <div class="team">- Developer</div>
           </div>
           <img class="icon-team" src="./img/squawk.jpg">
           <div class="meet_text">Squawk is no social bunny. But when it comes to programming he stands out from the crowd.</div>
         </div>
+      </div>
+    </div>
+    <div class="send container">
+      <div class="send-message">Send us a message...</div>
+      <div class="form">
+        <form method=post action=''>
+          Name: <input type='text' name='myname'> <br>
+          Email: <input type='text' name='myemail'> <br>
+          Message: <input type='textarea' name='mymessage'> <br>
+          <input type='submit' value='Submit'>
+          
+        </form>
+      </div>
     </div>
     <div class="footer">
-      <div class="container"></div>
+      <div class="container">
+        <div class="footer-content">Copyright Orange Rabbit - designed by Jake Bhatt</div>
+      </div>
     </div> 
   </body>
 </html>
