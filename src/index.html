@@ -10,34 +10,32 @@
   <body>
     <div class="header container">
       <div class="logo">
-        <div>
-          <img class="icon-rabbit" src="./img/rabbit.png"> 
-        </div>
-        <div class="top-header">
+        <img class="icon-rabbit" src="./img/rabbit.png"> 
+        <div class="header__lines">
           <div class="first header__line">orange</div>
           <div class="second header__line">rabbit</div>
         </div>
       </div>
       <div class="nav">
-        <div class="home content">          
-          <img class="icons" src="./img/home.png" alt="home">
-          <a class="icon-content" href=''>home</a>
+        <div class="nav-item">          
+          <img class="nav-icon" src="./img/home.png" alt="home">
+          <a class="nav-content" href=''>home</a>
         </div>
-        <div class="about content">
-          <img class="icons" src="./img/about.png" alt="about">
-          <a class="icon-content" href=''>about</a>  
+        <div class="nav-item">
+          <img class="nav-icon" src="./img/about.png" alt="about">
+          <a class="nav-content" href=''>about</a>  
         </div>
-        <div class="work content">
-          <img class="icons" src="./img/work.png" alt="work">
-          <a class="icon-content" href=''>work</a>
+        <div class="nav-item">
+          <img class="nav-icon" src="./img/work.png" alt="work">
+          <a class="nav-content" href=''>work</a>
         </div>
-        <div class="blog content">
-          <img class="icons" src="./img/blog.png" alt="blog">
-          <a class="icon-content" href=''>blog</a>
+        <div class="nav-item">
+          <img class="nav-icon" src="./img/blog.png" alt="blog">
+          <a class="nav-content" href=''>blog</a>
           </div>
-        <div class="contact content">
-          <img class="icons" src="./img/contact.png" alt="contact">
-          <a class="icon-content" href=''>contact</a>  
+        <div class="nav-item">
+          <img class="nav-icon" src="./img/contact.png" alt="contact">
+          <a class="nav-content" href=''>contact</a>  
         </div>
       </div>
     </div>
@@ -67,56 +65,57 @@
       </div>   
     </div>
     </div>
-    <div class="meet container">
+    <div class="meet-team container">
       <div class="meet-team__header">
           Meet the team
       </div>
-      <div class="meet-team">
-        <div class="team-items">
+      <div class="meet-team__columns">
+        <div class="meet-team__column">
           <div class="meet-team__item">
             Hoof 
-            <span class="team">- Lead Designer</span>
+            <span class="text-color">- Lead Designer</span>
           </div>
-          <img class="icon-team" src="./img/horse.jpg">
-          <div class="meet_text">Hoof is our the most talented designer. However he's not the talkative type and i would advise not getting on the wrong side of him.</div>
+          <img class="meet-team__icon" src="./img/horse.jpg">
+          <div class="meet-team__text">Hoof is our the most talented designer. However he's not the talkative type and i would advise not getting on the wrong side of him.</div>
         </div>
-        <div class="team-items">
+        <div class="meet-team__column">
           <div class="meet-team__item">
-            Nibs<span class="team">- Ceo/Director</span>
+            Nibs<span class="text-color">- Ceo/Director</span>
           </div>
-          <img class="icon-team" src="./img/rabbit.jpg">
-          <div class="meet_text">Nibs is our go to woman. She's the ceo/director of orange rabbit and runs fast when she has too</div>
+          <img class="meet-team__icon" src="./img/rabbit.jpg">
+          <div class="meet-team__text">Nibs is our go to woman. She's the ceo/director of orange rabbit and runs fast when she has too</div>
         </div>
-        <div class="team-items">
+        <div class="meet-team__column">
           <div class="meet-team__item">
             Squawk
-            <span class="team">- Developer</span>
+            <span class="text-color">- Developer</span>
           </div>
-          <img class="icon-team" src="./img/squawk.jpg">
-          <div class="meet_text">Squawk is no social bunny. But when it comes to programming he stands out from the crowd.</div>
+          <img class="meet-team__icon" src="./img/squawk.jpg">
+          <div class="meet-team__text">Squawk is no social bunny. But when it comes to programming he stands out from the crowd.</div>
         </div>
       </div>
     </div>
-    <div class="send container">
-      <div class="send-message">Send us a message...</div>
-      <div class="form">
-        <form method="post" action="#">
-          
-          <div class="send__item"> Name: 
-              <input type="text"> 
-            </div>
-            <div class="send__item"> Email:
-               <input type="text"> 
-              </div>
-            <div class="send__item"> Message: 
-              <input type="textarea"> 
-            </div>
-            <div class="button-submit">
-              <input type="submit" value="Submit">
-            </div>
-        
-        </form>
-      </div>
+    <div class="send-message container">
+      <div class="send-message__header">
+        Send us a message...
+      </div>      
+      <form method="post" action="#">        
+        <div class="send-message__item"> 
+          Name:
+          <input type="text">
+        </div>
+        <div class="send-message__item"> 
+          Email:
+          <input type="text">
+        </div>
+        <div class="send-message__item"> 
+          Message:
+          <input type="textarea">
+        </div>
+        <div class="button-submit">
+          <input type="submit" value="Submit">
+        </div>        
+      </form>
     </div>
     <div class="footer">
       <div class="container">
