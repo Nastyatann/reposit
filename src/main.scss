@@ -1,5 +1,6 @@
 body * {
   outline: 1px solid lightgrey;
+  box-sizing:border-box;
 }
 
 .container {
@@ -159,15 +160,15 @@ body * {
 
 .meet-team {
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 }
 
 .meet_text{
-  max-height: 100px;
+  max-height: 200px;
   font-size: 12px;
   margin: 20px auto;
   width: 50%;
+  overflow: auto;
 }
 
 .icon-team {
