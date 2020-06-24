@@ -3,7 +3,7 @@ body * {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -16,8 +16,8 @@ body * {
   background-image: url(../img/Oranges.jpg);
   border-top: 3px solid #ffa500;
   border-bottom: 3px solid  #ffa500;
-
 }
+
 .slider-container {
   height: 100%;
 }
@@ -97,7 +97,6 @@ body * {
   border-bottom: rgb(90, 85, 85);
 }
 
-
 /* news */
 
 .news {
@@ -131,13 +130,11 @@ body * {
  overflow: visible;
 }
 
-
 /* meet */
 
 .container_meet-team {
   width: 100%;
-  padding-bottom: 15px;
-  
+  padding-bottom: 15px;  
 }
 
 .meet-team__header {
@@ -152,8 +149,7 @@ body * {
 .team-items {
   display: flex;
   flex-direction: column;
-  
-  width: 33%;
+  width: 25%; 
 }
 
 .team {
@@ -161,10 +157,10 @@ body * {
   color: rgb(223, 161, 46);
 }
 
-
 .meet-team {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .meet_text{
@@ -175,7 +171,7 @@ body * {
 }
 
 .icon-team {
-  max-width: 250px;
+  max-width: 100%;
   border: 4px solid #c5850e;
   border-radius: 50%;
   margin: 0 auto;
@@ -188,16 +184,14 @@ body * {
 .meet-team__item {
   display: flex;
   margin-bottom: 20px;
-  justify-content: center;
+  justify-content: center;  
 }
-
 
 /* send message */
 
 .send {
   display: block;
   margin-bottom: 20px;
-  position: relative;
 }
 
 .send-message {
@@ -206,53 +200,54 @@ body * {
   color:rgb(223, 161, 46);
   font-size: 2em;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+
+.send__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .form {
   color: rgb(223, 161, 46);
-  margin-bottom: 10px;
-
+ 
 }
 
-input[type=text] {
+input[type=text], input[type=textarea] {
   color: rgb(223, 161, 46);
-  width: 90%;
-  margin-bottom: 20px;
-  background-color: rgb(185, 174, 174);
+  width: 90%;  
+  background-color: rgb(238, 232, 232);
+  border: solid 1px rgb(238, 232, 232);
+  border-top: solid 1px rgb(170, 168, 168);
+  border-left: solid 1px rgb(170, 168, 168);
  
 }
 
 input[type=textarea] {
-  color: rgb(223, 161, 46);
-  width: 90%;
-  height: 40px;
-  background-color: rgb(185, 174, 174);
-  text-align: right;
-  
+  min-height: 50px;
 }
+
 
 input[type=submit] {
   background-color:rgb(223, 161, 46);
   color: #fff;
-  padding: 8px 20px;
+  padding: 8px 30px;
   border: none;
-  cursor: pointer;
-  
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-
+  cursor: pointer;  
 }
  
-
-
+.button-submit {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
 
 /* footer */
  
 .footer {
   width: 100%;
-  margin-top: 60px;
   background-color: rgb(223, 161, 46);
 }
 
