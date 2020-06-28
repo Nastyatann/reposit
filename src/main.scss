@@ -1,3 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 body * {
   outline: 1px solid lightgrey;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.header {
+  //width: 100%;
+  background-image: url('./img/header/bg_bread.jpg');
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 900px;
+  position: relative;
+    
+}
+
+.container {
+  max-width: 1260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.navigation {
+  display: flex;
+  height: 70px;
+  font-family: 'Playfair Display', serif;
+
+}
+
+.nav-menu {
+  display: flex;
+  font-family: 'Alegreya', serif;
+}
+
+.icon-bread {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+ 
+  position: absolute;
+  bottom: 0;
+}
+.icon_bread {
+  max-width: 50px;
+  margin: auto;
+ 
+ 
+}
+
+title {
+  display: block;
+  margin: auto 0;
+    
+}
+
+.header-title {
+  font-size: 100px;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  letter-spacing: 2px;
+  word-spacing: 3mm;
+  text-align: center;
+}
+.header-text {
+  text-align: center;
+  color: #fff;
+  font-size: 29px;
+  font-family: 'Alegreya', serif;
+  letter-spacing: 2px;
+}
+
+.header-button {
+  display: inline-block;
+  padding: 20px 40px;
+  color:#fff;
+  font-family: 'Alegreya', serif;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  
 }
