@@ -1,0 +1,194 @@
+//Art of cakes 
+
+.artblock-bg {
+    background-image: url("./img/art/art.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.artblock-gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), #fff);
+}
+  
+.artblock {
+    display: flex;
+    padding: 11vh 0;
+    align-items: center;
+}
+  
+.artblock-content {
+    text-align: center;
+    max-width: 100%;
+}
+  
+.tab {
+    max-width: 100%;
+}
+  
+.artblock__column {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+  
+.content__text {
+    width: 100%;
+    font-size: 1vw;
+    letter-spacing: 0.05vw;
+    color: #56534c;
+    font-family: 'Hind', sans-serif;
+    padding: 1vw;
+}
+  
+.content__header {
+    font-size: 3vw;
+    letter-spacing: 0.1vw;
+    color: #56534c;
+    font-weight: 700;
+    padding-bottom: 2vw;
+}
+  
+.content__header div {
+    font-size: 1.1vw;
+    letter-spacing: 0.1vw;
+    color: #a47d5e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+  
+.content__chef {
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    color: #56534c;
+    font-weight: 700;
+    padding-top: 1.5vw;
+    padding-bottom: 2vw;
+}
+  
+.content__image {
+    padding-bottom: 1.5vw;
+}
+  
+.image-text {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    padding: 1vw;
+    font-size: 1.3vw;
+    letter-spacing: 0.1vw;
+    color: #56534c;
+    font-weight: 400;
+    border-top: 1px solid #d7d5ca;
+    border-bottom: 1px solid #d7d5ca;
+}
+  
+.image-border {
+    background-image: url("./img/art/chef.jpg");
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 8vw;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0.2vw solid #fff;
+}
+  
+.content-quote {
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    color: #a47d5e;
+    font-weight: 400;
+    font-family: 'Great Vibes', cursive;
+}
+    
+.content-quote:before,
+.content-quote:after {
+    content: '“ ';
+    font-size: 3.5vw;
+    letter-spacing: 0.2vw;
+    /* line-height: 30px; */
+    color: #56534c;
+    font-family: "Times New Roman";
+    display: flex;
+    align-self: flex-start;
+    opacity: 0.7;
+    margin-right: 4vw;
+}
+    
+.content-quote:after {
+    content: '”';
+    align-self: flex-end;
+    margin-right: 0;
+    margin-left: 4vw;
+    line-height: 3vw;
+}
+  
+.tab {
+    max-width: 100%;
+}
+  
+.tab-item {
+    width: 17vw;
+    height: 15vw;
+    background-size: cover;
+    margin: 0.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.first {
+    max-width: 100%;
+    background-image: url("./img/art/art-img1.jpg");
+}
+
+.second {
+    max-width: 100%;
+    background-image: url("./img/art/art-img2.jpg");
+}
+  
+.third {
+    max-width: 100%;
+    background-image: url("./img/art/art-img3.jpg");
+}
+  
+.fourth {
+    max-width: 100%;
+    background-image: url("./img/art/art-img4.jpg");
+}
+  
+.tab-item__content {
+    width: 95%;
+    height: 95%;
+    border: 0.3vw solid #fff;
+}
+  
+.tab-title {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+  
+.tab-title__opacity {
+    width: 15vw;
+    height: 15vw;
+    background-image: url("./img/art/vector1.svg"), url("../img/art/vector2.svg");
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    filter: drop-shadow(0px 14px 9px #3b251d5b);
+    background-size: cover;
+}
+  
+.tab-title_text {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2vw;
+    letter-spacing: 0.2vw;
+    color: #c9b176;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
