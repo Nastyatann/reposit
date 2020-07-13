@@ -20,7 +20,9 @@ body {
 
 
 .container {
-  max-width: 1260px;
+  max-width: 1290px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -70,9 +72,63 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  //height: 85vh;
+  
     
 }
 
+.tasty {
+  padding: 95px 15px 105px;
+  max-width: 1170px;
+  margin:0 auto;
+  
+}
 
+.tasty-left-block {
+  width: 30%;
+  height: 300px;
+  background-image: url("./img/tasty/tasty.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
 
+.tasty-right-block {
+  width: 60%;
+  display: inline-block;
+  padding: 80px 60px 35px;
+  background-color: #fff;
+  position: relative;
+}
+
+.tasty-right-block .content__header {
+  padding-bottom: 60px;
+}
+
+.right-ready {
+  width: 15vh;
+  position: absolute;
+  top:-10%;
+  right: -10%;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.tasty__item {
+  background-color: #fff;
+  background-image: url("./img/jibarito/vector_jibarito.svg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.transparent {
+  background: linear-gradient(rgba(255, 255, 255, 0), #fff);
+}
+
+.transparent .prep {
+  font-size: 1.2vw;
+}
+
+.transparent .time {
+  font-size: 4.8vw;
+  color: #e2b28a;
+}
