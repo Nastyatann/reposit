@@ -57,18 +57,28 @@
 }
   
 .navigation-menu__item {
-    position: relative;
+    font-size: 0.8vw;
+    letter-spacing: 0.4vw;
     color: #fff;
-    font-size: 0.9vw;
+    font-weight: 400;
     text-transform: uppercase;
-    margin: 0 1.5vw;
+    margin: 1.5vw 2vw;
+    position: relative;
 }
   
 .navigation-menu__item:after {
     content:'~';
     color: #fff;
     position: absolute;
-    margin: 0 0 0 2vw;
+    margin: 0 0 0 1.8vw;
+}
+
+.navigation-menu__item:last-child {
+    margin-right: 0;
+}
+
+.navigation-menu__item:first-child {
+    margin-left: 0;
 }
  
 .navigation-menu__item:last-child:after {
@@ -76,7 +86,7 @@
 }
   
 .icon {
-    padding: 0 1vw;
+    padding: 0 12px;
 }
   
 .icon:last-child{
@@ -93,7 +103,7 @@
 }
   
 .content-container  div{
-    margin: 3vw 0;
+    margin-bottom: 70px;
 }
   
 .content-header {

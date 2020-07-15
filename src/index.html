@@ -13,7 +13,7 @@
     <!--border-line-->
     <div class="wrapper">
       <div class="bread-line">
-        <div class="bread-border center">
+        <div class="circle-border center">
           <div class="bread-icon"></div>
         </div>
       </div>
@@ -34,8 +34,7 @@
               <div class="content__text"> 
                 Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.
               </div>
-              <div class="tasty-stars"></div>
-              <div class="rating">
+              <div class="star-rating">
                 @@include('./partials/star/_star.html', {"rate": 1})
                 @@include('./partials/star/_star.html', {"rate": 2})
                 @@include('./partials/star/_star.html', {"rate": 3})
@@ -44,10 +43,10 @@
               </div>
               <div class="tasty-widget">
                 <div class="tasty-widget__images">
-                  <div class="tasty-widget__chevron">&lt;</div>
-                  <div class="tasty-widget__image tasty1"></div>
-                  <div class="tasty-widget__image tasty2"></div>
-                  <div class="tasty-widget__image tasty3"></div>
+                  <div class="tasty-widget__chevron active">&lt;</div>
+                  <div class="border__image tasty1"></div>
+                  <div class="border__image tasty2"></div>
+                  <div class="border__image tasty3"></div>
                   <div class="tasty-widget__chevron">&gt;</div>
                 </div>
               </div>
@@ -59,7 +58,7 @@
                   <div class="mins">mins</div> </div>
                 </div>
               </div>
-              <div class="bread-border"></div>
+              <div class="circle-border"></div>
             </div>
           </div>
         </div>

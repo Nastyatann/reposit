@@ -19,6 +19,10 @@ body {
   padding: 0;
 }
 
+p {
+  margin: 0;
+  padding:0;
+}
 
 .container {
   max-width: 1290px;
@@ -45,7 +49,7 @@ body {
   position: relative;
 }
 
-.bread-border {
+.circle-border {
   width: 6vw;
   height: 6vw;
   background-color: #fff;
@@ -78,15 +82,16 @@ body {
 }
 
 .tasty {
-  padding: 95px 15px 105px;
-  max-width: 1020px;
+  padding: 140px 15px 105px;
+  max-width: 1070px;
   margin:0 auto;
   display:flex;
   justify-content: center;
+  filter: drop-shadow(0px 10px 5px #4b48487e);
 }
 
 .tasty-left-block {
-  width: 30%;
+  width: 35%;
 }
 
 .tasty-left-block img {
@@ -111,12 +116,14 @@ body {
 }
 
 .right-ready {
-  width: 15vh;
+  width: 12.5vw;
+  height: 12.5vw;
   position: absolute;
-  top:-10%;
-  right: -10%;
+  top:-2.75vw;
+  right: -6.25vw;
   background-color: rgb(255, 255, 255);
   text-align: center;
+  filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.54));
 }
 
 .tasty__item {
@@ -139,15 +146,11 @@ body {
   color: #e2b28a;
 }
 
-.rating {
+.star-rating {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
   padding-bottom: 40px;
-}
-
-.tasty-widget {
- 
 }
 
 .tasty-widget__images {
@@ -158,13 +161,13 @@ body {
 }
 
 .tasty-widget__chevron{ 
-  width: 30px;
-  height: 30px;
+  width: 1.8vw;
+  height: 1.8vw;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
+  font-size: 1.56vw;
   font-weight: 700;
   border: 2px solid #56534c;  
   color: #56534c;
@@ -177,7 +180,11 @@ body {
   border: 2px solid #d8bba3;
 }
 
-.tasty-widget__image {
+.tasty-widget__chevron .active {
+  color: #d8bba3;
+}
+
+.border__image {
   background-repeat: no-repeat;
   width: 5.5vw;
   height: 5.5vw;
@@ -199,7 +206,7 @@ body {
   background-image: url("./img/tasty/tasty3.jpg");
 }
 
-.tasty .bread-border {
+.tasty .circle-border {
   left:0;
   width: 3vw;
   height: 3vw;
