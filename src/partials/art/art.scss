@@ -34,35 +34,34 @@
     position: relative;
 }
 
- 
-.content__text {
-    width: 100%;
-    font-size: 1vw;
-    letter-spacing: 0.05vw;
-    color: #56534c;
-    font-family: 'Hind', sans-serif;
-    padding-bottom: 45px;
-}
-  
 .content__header {
-    font-size: 3vw;
-    letter-spacing: 0.1vw;
+    font-size: 3em;
+    letter-spacing: 0.02em;
     color: #56534c;
     font-weight: 700;
     padding-bottom: 65px;
 }
 
 .content__header div {
-    font-size: 1.1vw;
-    letter-spacing: 0.1vw;
+    font-size: 0.29em;
+    letter-spacing: 0.1em;
     color: #a47d5e;
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.content__text {
+    width: 100%;
+    font-size: 0.87em;
+    letter-spacing: 0.05em;
+    color: #56534c;
+    font-family: 'Hind', sans-serif;
+    padding-bottom: 45px;
+}
   
 .content__chef {
-    font-size: 1.5vw;
-    letter-spacing: 0.1vw;
+    font-size: 1.5em;
+    letter-spacing: 0.04em;
     color: #56534c;
     font-weight: 700;
     padding-bottom: 45px;
@@ -76,8 +75,8 @@
     margin-left: 20px;
     margin-right: 20px;
     padding: 1vw;
-    font-size: 1.3vw;
-    letter-spacing: 0.1vw;
+    font-size: 1.5em;
+    letter-spacing: 0.04em;
     color: #56534c;
     font-weight: 400;
     border-top: 1px solid #d7d5ca;
@@ -96,8 +95,8 @@
 }
   
 .content-quote {
-    font-size: 1.5vw;
-    letter-spacing: 0.1vw;
+    font-size: 1.5em;
+    letter-spacing: 0.04em;
     color: #a47d5e;
     font-weight: 400;
     font-family: 'Great Vibes', cursive;
@@ -109,9 +108,9 @@
 .content-quote:before,
 .content-quote:after {
     content: '“ ';
-    font-size: 3.5vw;
-    letter-spacing: 0.2vw;
-    /* line-height: 30px; */
+    font-size: 2.5em;
+    letter-spacing: 0.03em;
+    line-height: 0.5em;
     color: #56534c;
     font-family: "Times New Roman";
     display: flex;
@@ -125,7 +124,7 @@
     align-self: flex-end;
     margin-right: 0;
     margin-left: 50px;
-    line-height: 3vw;
+    line-height: 0.5em;
 }
   
 .tab {
@@ -190,8 +189,9 @@
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    font-size: 1.2vw;
-    letter-spacing: 0.2vw;
+    font-size: 1.5em;
+    letter-spacing: 0.02em;
+    line-height: 1.25em;
     color: #c9b176;
     font-weight: 400;
     text-align: center;

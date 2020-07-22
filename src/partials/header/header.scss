@@ -27,17 +27,17 @@
     align-items: center;
     height: 100%;
 } 
-  
-.navigation-logo {
+
+.logo {
     font-family: 'Great Vibes', cursive;
     margin: auto 0;
-    font-size: 2vw;
+    font-size: 1.875em;
     color: #fff;
-    letter-spacing: 1vw;
+    letter-spacing: 0.5em;
 }
   
 .navigation-menu {
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.2em;
 }
   
 .navigation-icons {
@@ -57,20 +57,18 @@
 }
   
 .navigation-menu__item {
-    font-size: 0.8vw;
-    letter-spacing: 0.4vw;
+    font-size: 0.875em;
+    letter-spacing: 0.28em;
+    line-height: 1.71em;
     color: #fff;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 1.5vw 2vw;
-    position: relative;
 }
   
 .navigation-menu__item:after {
     content:'~';
     color: #fff;
-    position: absolute;
-    margin: 0 0 0 1.8vw;
+    margin: 0 1.8em;
 }
 
 .navigation-menu__item:last-child {
@@ -83,10 +81,15 @@
  
 .navigation-menu__item:last-child:after {
     content: ''; 
+    margin:0;
+}
+
+.navigation-icons img {
+    max-width: 100%;
 }
   
 .icon {
-    padding: 0 12px;
+    padding: 0 0.5em;
 }
   
 .icon:last-child{
@@ -98,26 +101,27 @@
 }
   
 .content-container {
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
   
-.content-container  div{
+.content-container div{
     margin-bottom: 70px;
 }
   
 .content-header {
-    font-size: 6vw;
-    letter-spacing: 0.5vw;
-    color: #ffffff;
+    font-size: 5.75em;
+    letter-spacing: 0.1em;
+    color: #fff;
     font-weight: 700;
     font-family: "Playfair Display", serif;
     filter: drop-shadow(0px 1px 0px #3d3029);
 }
   
 .content-text {
-    font-size: 1.5vw;
-    letter-spacing: 0.2vw;
+    font-size: 1.5em;
+    letter-spacing: 0.125em;
     color: #ffffff;
     font-family: 'Hind', sans-serif;
     text-align: center;
@@ -126,10 +130,11 @@
   
 .content-button {
     display: inline-block;
-    padding: 1.2vw 4vw;
+    padding: 20px 45px;
     color: #fff;
     text-transform: uppercase;
     background-color: #56534ca1;
-    letter-spacing: 0.2vw;
-    font-size: 0.9vw;
+    letter-spacing: 0.25em;
+    font-size: 0.875em;
 }
+

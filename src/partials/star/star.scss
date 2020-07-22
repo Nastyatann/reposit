@@ -14,7 +14,6 @@
 
 .star__label:hover .star__icon,
 .star__label:hover ~ .star__label .star__icon, 
-//.star__input:checked + .star__label .star__icon,
 .star__input:checked ~ .star__label .star__icon {
     
     background-color: #c9b176;

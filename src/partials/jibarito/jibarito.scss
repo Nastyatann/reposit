@@ -25,8 +25,8 @@
 }
   
 .jibarito__column {
-    font-size: 2vw;
-    letter-spacing: 0.1vw;
+    font-size: 1.875em;
+    letter-spacing: 0.03em;
     color: #a47d5e;
     font-weight: 700;
 }
@@ -41,8 +41,8 @@
   
 .jibarito__column p{
     width: 100%;
-    font-size: 1vw;
-    letter-spacing: 0.1vw;
+    font-size: 0.47em;
+    letter-spacing: 0.09em;
     color: #56534c;
     font-family: 'Hind', sans-serif;
     padding: 1vw;
@@ -65,8 +65,8 @@
 }
   
 .right-content__image {
-    max-width: 50vw;
-    border: 0.7vw solid #fff;
+    max-width: 50em;
+    border: 5px solid #fff;
     position: relative;
     filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.54));
 }
@@ -88,8 +88,8 @@
 }
   
 .image__button a {
-    font-size: 1.2vw;
-    letter-spacing: 0.01vw;
+    font-size: 1.125em;
+    letter-spacing: 0.05em;
     color: #dfc691;
     font-weight: 700;
     text-transform: uppercase;
@@ -123,23 +123,23 @@
 }
   
 .prep {
-    font-size: 1vw;
-    letter-spacing: 0.2vw;
+    font-size: 1em;
+    letter-spacing: 0.2em;
     color: #a47d5e;
     font-weight: 700;
     text-transform: uppercase;
 }
   
 .time{
-    font-size: 3vw;
-    letter-spacing: 0.2vw;
+    font-size: 3em;
+    letter-spacing: 0.2em;
     color: #56534c;
     font-weight: 700;
 }
   
 .mins {
-    font-size: 1vw;
-    letter-spacing: 0.2vw;
+    font-size: 1em;
+    letter-spacing: 0.2em;
     color: #777369;
     font-weight: 700;
 }
@@ -157,10 +157,10 @@
 }
   
 .transparent .prep {
-    font-size: 1.2vw;
+    font-size: 1.2em;
 }
   
 .transparent .time {
-    font-size: 4.8vw;
+    font-size: 4.8em;
     color: #e2b28a;
 }
