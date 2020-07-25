@@ -8,7 +8,7 @@
     height: 100vh;
 }
   
-  .block-shadow {
+.block-shadow {
     background-image: url("./img/header/bg_shadow.png");
     background-position: top center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@
 .block-navigation {
     background-color: #56534c6e;
     width: 100%;
-    height: 8%;
+    height: 8vh;
 }
   
 .navigation {
@@ -100,94 +100,6 @@
     padding-right: 0;
 }
 
-  
-@media (max-width:767px) {
-    .logo {
-        font-size: 2.5em;
-    }
-
-    .menu {
-        width: 40px;
-        position: relative;
-        text-align: center;
-        height: 40px;
-    }
-    
-    #check-menu {
-        display: none;
-    }
-
-    label {
-        display: block;
-        position: absolute;
-        top:0;
-        left:0;
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        z-index: 2;
-    }
-    
-    .burger {
-      position: absolute;
-      top: 8px;
-      right: 2px;
-      width: 35px;
-      height: 2px;
-      background-color: #fff;
-      transition: 0.5s all;
-    }
-
-    .center.navigation-menu {
-        display: block;
-        position: absolute;
-        width: 100%;
-        top:60px;
-        left:0;
-        //max-height: 0;
-        font-size: 0;
-        overflow: hidden;
-        transition: 0.5s all;
-    }
-
-    #check-menu:checked ~ .center.navigation-menu {
-        max-height: 500px;
-        font-size: 16px;
-    }
-
-    .second-line, 
-    .third-line {
-        top: 18px;
-    }
-
-    .fourth-line {
-        top: 28px;
-    }
-
-    #check-menu:checked ~ .first-line,
-    #check-menu:checked ~ .fourth-line {
-        display: none;
-    }
-
-    #check-menu:checked ~ .second-line {
-        transform: rotate(45deg);
-    } 
-
-    #check-menu:checked ~ .third-line {
-        transform: rotate(-45deg);
-    } 
-
-    .main-menu a {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        color: #fff;
-        text-decoration: none;
-        border-top: 1px solid rgba (255, 255, 255, 0.3);
-        background-color: #000;
-    }    
-}
-
 .content {
     height: 92%;
 }
@@ -230,3 +142,108 @@
     font-size: 0.875em;
 }
 
+@media (max-width:995px) {
+
+    .content-container div{
+        margin-bottom: 30px;
+    }
+
+    .content-button {
+        padding: 15px 25px;
+  }
+}
+
+@media (max-width:767px) {
+
+    .logo {
+        font-size: 2.5em;
+        order:1;
+    }
+
+    .menu {
+        width: 40px;
+        height: 8vh;
+        position: relative;
+        text-align: center;
+    }
+    
+    #check-menu {
+        display: none;
+    }
+
+    .menu-label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 2;
+        cursor: pointer;
+    }
+    
+    .burger {
+        width: 35px;
+        height: 2px;
+        position: absolute;
+        top: 30%;
+        right: 2px;
+        background-color: #fff;
+        transition: 0.5s all;
+    }
+
+    .center.navigation-menu {
+        display: block;
+        position: absolute;
+        top:8vh;
+        left:-200px;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+
+    #check-menu:checked ~ .center.navigation-menu {
+        height: 92vh;
+        width: 100vw;
+        font-size: 16px;
+        padding: 30px 15px;
+        left: -15px;
+        background-color: #56534ce5;
+        z-index: 2;
+    }
+
+    .second-line, 
+    .third-line {
+        top: 50%;
+    }
+
+    .fourth-line {
+        top: 70%;
+    }
+
+    #check-menu:checked ~ .first-line,
+    #check-menu:checked ~ .fourth-line {
+        display: none;
+    }
+
+    #check-menu:checked ~ .second-line {
+        transform: rotate(45deg);
+    } 
+
+    #check-menu:checked ~ .third-line {
+        transform: rotate(-45deg);
+    } 
+
+    .navigation-menu__item:after {
+        margin: 0;
+        font-size: 0;
+    }
+
+    .navigation-menu__item {
+        padding: 10px;
+        text-align: start;
+    }
+
+    .navigation-icons {
+        order:1;
+    } 
+}

@@ -215,10 +215,12 @@
 }
 
 @media (max-width:767px) {
+
     .artblock {
         display: block;
         padding: 30px 0;
     }
+
    .artblock__column {
        width: 100%;
    }
@@ -236,11 +238,22 @@
    .content__text {
        padding-bottom: 35px;
    }
+   
+   .content-quote p {
+       margin: 0 15px;
+   }
+
    .tab {
     padding: 15px 50px;
    }
+
    .tab-item-column__image {
     width: 27vw;
     height: 24.625vw;
    }
+
+   .tab-title__opacity {
+    width: 20vw;
+    height: 20vw;
+    }
 }
