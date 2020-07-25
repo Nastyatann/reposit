@@ -111,11 +111,11 @@
 
 .column__item {
     padding: 2.7vw 2vw;
-    height: 33.3%;
+   // height: 33.3%;
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
+   //display: flex;
+    //flex-direction: column;
+    //justify-content: center;  
 }
   
 .column__item:first-child {
@@ -149,7 +149,7 @@
     background-image: url("./img/jibarito/vector_jibarito.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 1.4vw 0 1.5vw;
+    //padding: 1.4vw 0 1.5vw;
 }
   
 .transparent {
@@ -163,4 +163,45 @@
 .transparent .time {
     font-size: 4.8em;
     color: #e2b28a;
+}
+
+@media (max-width:1200px) {
+    .right-content__column {
+        width: 150px;
+    }
+}
+
+@media (max-width:995px) {
+    .right-content__column {
+        width: 135px;
+    }
+}
+
+@media (max-width:767px) {
+    .jibarito-block {
+        display: block;
+        padding: 30px 0;
+    }
+
+   .jibarito-content {
+       display: block;
+       padding-top: 15px;
+   }
+
+   .jibarito-content__block {
+       padding: 15px;
+   }
+
+   .jibarito__right-content {
+       justify-content: center;
+   }
+
+   .right-content__column {
+       width: 25%;
+   }
+
+   .column__item {
+       font-size: 8px;
+       padding: 2vw; 
+   }
 }

@@ -39,6 +39,8 @@ p {
   .container {
     max-width: 970px;
   }
+  
+  
 }
 
 @media (max-width:995px) {
@@ -48,15 +50,16 @@ p {
   .container {
     max-width: 750px;
   }
-
 }
 
 @media (max-width:767px) {
-  body {
-    font-size: 8px;
-  }
+
   .container {
     max-width: none;
+  }
+
+  .burger-menu {
+    display: block;
   }
 }
 
@@ -106,9 +109,7 @@ p {
   margin: 0 auto;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
-  
-    
+  background-size: cover;  
 }
 
 .tasty {
@@ -152,7 +153,7 @@ p {
 }
 
 .tasty-right-block .content__header {
-  padding-bottom: 60px;
+  //padding-bottom: 60px;
 }
 
 .right-ready {
@@ -187,18 +188,20 @@ p {
   color: #e2b28a;
 }
 
+.star  {
+  padding-bottom: 40px;
+}
+
 .star-rating {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  padding-bottom: 40px;
 }
 
 .tasty-widget__images {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
 }
 
 .tasty-widget__chevron{ 
@@ -245,4 +248,58 @@ p {
   cursor: pointer;
   color: #d8bba3;
   border: 2px solid #d8bba3;
+}
+
+@media (max-width:1200px) {
+  .right-ready {
+    width: 150px;
+    height: 150px;
+    
+  }
+  
+}
+
+@media (max-width:995px) {
+  .right-ready {
+    width: 115px;
+    height: 115px;
+    
+  }
+}
+
+@media (max-width:767px) {
+
+  .tasty {
+    display: block;
+    padding: 45px 30px;
+  }
+
+  .tasty-left-block,
+  .tasty-right-block {
+    width: 100%;
+  }
+
+  .tasty-right-block {
+    padding: 40px 30px 15px;
+  }
+
+  .right-ready {
+    width: 90px;
+    height: 90px;
+    top: -15vw;
+  }
+
+  .tasty-widget__chevron {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .transparent .time {
+    font-size: 3.5em;
+  }
+
+  .border__image {
+    width: 45px;
+    height: 45px;
+  }
 }

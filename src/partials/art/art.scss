@@ -95,7 +95,7 @@
 }
   
 .content-quote {
-    font-size: 1.5em;
+    font-size: 2em;
     letter-spacing: 0.04em;
     color: #a47d5e;
     font-weight: 400;
@@ -103,6 +103,7 @@
 }
 .content-quote p {
     max-width: 235px;
+    margin: 0 50px;
 }
     
 .content-quote:before,
@@ -116,14 +117,12 @@
     display: flex;
     align-self: flex-start;
     opacity: 0.7;
-    margin-right: 50px;
 }
     
 .content-quote:after {
     content: '”';
     align-self: flex-end;
     margin-right: 0;
-    margin-left: 50px;
     line-height: 0.5em;
 }
   
@@ -213,4 +212,35 @@
     height: 15.625vw;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media (max-width:767px) {
+    .artblock {
+        display: block;
+        padding: 30px 0;
+    }
+   .artblock__column {
+       width: 100%;
+   }
+
+   .artblock-content {
+       padding:0 45px;
+   }
+
+   .content__header, 
+   .content__chef,
+   .content__image {
+       padding-bottom: 20px;
+   }
+
+   .content__text {
+       padding-bottom: 35px;
+   }
+   .tab {
+    padding: 15px 50px;
+   }
+   .tab-item-column__image {
+    width: 27vw;
+    height: 24.625vw;
+   }
 }
