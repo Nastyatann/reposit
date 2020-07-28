@@ -1,3 +1,291 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h2,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding: 8px 0;
+}
+
+.header {
+  background-color: #131313; 
+  position: fixed;
+  width: 100vw;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-menu {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.header-item {
+  margin-right: 20px;
+}
+
+.header-item:after {
+  content:'';
+  display: block;
+}
+
+.header-item:last-child {
+  margin-right: 0;
+}
+
+.header-item a {
+  text-decoration: none;
+  padding: 0 15px;
+  color: #b3b3b3;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+
+.header-item a:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.header-item:hover:after {
+  content: '';
+  height: 7px;
+  background-color: #9e130c;
+}
+
+
+.header-logo {
+  width: 270px;
+  text-align: center;
+  padding-right: 35px;
+  padding-left: 15px;
+}
+
+.header-logo a>img {
+  max-width: 100%;
+}
+
+// main-content
+
+.wrapper {
+  width: 100vw;
+}
+
+.main-bg {
+  height: 100vh;
+  background-image: url("./img/rombs/romb-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  padding: 100px 0;
+}
+
+.main {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//portfolio
+
+.portfolio,
+.services,
+.feedback,
+.contacts {
+  padding: 65px 0 75px 0;
+}
+
+.portfolio {
+  background-color: #ffffff;
+}
+
+
+.style-header {
+  font-size: 35px;
+  line-height: 23px;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Roboto";
+  padding-bottom: 35px;
+}
+
+.style-header.white {
+  color: #ffffff;
+}
+
+.block {
+  max-width: 100%;
+}
+
+.block>p {
+  padding-bottom: 35px;
+  font-size: 15px;
+  line-height: 23px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+
+.block-items,
+.block-images  {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.block-item {
+  font-size: 15px;
+  line-height: 23px;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Open Sans";
+  margin-right: 50px;
+}
+
+.block-item:hover { 
+  cursor: pointer;
+}
+
+.block-item:after {
+  content:'';
+  display: block;
+}
+
+.block-item:hover:after {
+  content: '';
+  height: 7px;
+  background-color: #9e130c;
+}
+
+.block-images {
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.block-image {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.portfolio-1,
+.portfolio-2,
+.portfolio-3,
+.portfolio-4,
+.portfolio-5 {
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //background-position: 55% 6%;
+}
+
+.portfolio-1 {
+  background-image: url("./img/portfolio/portfolio-1.jpg");
+}
+
+.portfolio-2 {
+  background-image: url("./img/portfolio/portfolio-2.jpg");
+}
+
+.portfolio-3 {
+  background-image: url("./img/portfolio/portfolio-3.jpg");
+}
+
+.portfolio-4 {
+  background-image: url("./img/portfolio/portfolio-4.jpg"); 
+}
+
+.portfolio-5 {
+  background-image: url("./img/portfolio/portfolio-5.jpg"); 
+}
+
+.block-button {
+  text-align: center;
+  width: 122px;
+  height: 44px;
+  background-color: #b4b4b4;
+  border: 3px solid #9e130c;
+}
+
+.block-button:hover {
+  cursor: pointer;
+  background-color: #9e130c;
+  border: 3px solid #9e130c;
+}
+
+
+//services
+
+.services {
+  background-color: #e8e8e8;
+}
+
+.services .block-image {
+  width: 270px;
+  height: 270px;
+}
+
+
+.services-1,
+.services-2,
+.services-3,
+.services-4 {
+  background-repeat: no-repeat;
+  background-position: 55% 6%;
+}
+
+.services-1 {
+  background-image: url("./img/services/serv-1.jpg");
+}
+
+.services-2 {
+  background-image: url("./img/services/serv-2.jpg");
+}
+
+.services-3 {
+  background-image: url("./img/services/serv-3.jpg");
+}
+
+.services-4 {
+  background-image: url("./img/services/serv-4.jpg"); 
+}
+
+//feedback
+
+.feedback {
+  background-color: #3a3a3a;
+}
+
+//contacts
+
+.contacts {
+  background-color: #131313;
+}
+
+//footer
+
+.footer {
+  padding: 25px 0;
+  background-color: #000000;
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+  font-family: "Font Awesome";
+}
