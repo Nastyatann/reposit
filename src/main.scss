@@ -19,7 +19,7 @@ p {
 .header {
   background-color: #131313; 
   position: fixed;
-  width: 100vw;
+  width: 100%;
 }
 
 .container {
@@ -33,15 +33,16 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
-
 
 .header-item {
   margin-right: 20px;
 }
 
 .header-item:after {
-  content:'';
+  content: '';
+  height: 7px;
   display: block;
 }
 
@@ -65,11 +66,8 @@ p {
 }
 
 .header-item:hover:after {
-  content: '';
-  height: 7px;
   background-color: #9e130c;
 }
-
 
 .header-logo {
   width: 270px;
@@ -85,7 +83,7 @@ p {
 // main-content
 
 .wrapper {
-  width: 100vw;
+  width: 100%;
 }
 
 .main-bg {
@@ -93,14 +91,92 @@ p {
   background-image: url("./img/rombs/romb-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
-  padding: 100px 0;
+  width: 100%;
 }
 
 .main {
   display:flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.main-image {
+  width: 270px;
+  height: 270px;
+  border-radius: 135px;
+  background-color: #dbdfe1;
+  clip-path: polygon(50% 0,100% 50%, 50% 100%, 0% 50%);
+}
+
+.main-image:nth-child(odd) {
+  position: relative;
+}
+
+.main-image:nth-child(even) {
+  background-color: #e6e6e6af;
+  position: absolute;
+  top:52%;
+}
+
+.main-image:nth-child(2) {
+  left: 21%;
+}
+
+.main-image:nth-child(4) {
+  left: 41.2%;
+}
+
+.main-image:nth-child(6) {
+  left: 61.5%;
+}
+
+.main-image:hover {
+  cursor: pointer;
+  background-color: #9e130c;
+}
+
+.img-bg {
+  background-repeat: no-repeat;
+  max-width: 270px;
+  height: 270px;
+  background-position: 50%;
+}
+
+.image-1 {
+  background-image: url("./img/rombs/romb-1.png");
+}
+
+.image-2 {
+  background-image: url("./img/rombs/romb-2.png");
+}
+
+.image-3 {
+  background-image: url("./img/rombs/romb-3.png");
+}
+
+.image-4 {
+  background-image: url("./img/rombs/romb-4.png");
+}
+
+.image-5 {
+  background-image: url("./img/rombs/romb-5.png");
+}
+
+.image-6 {
+  background-image: url("./img/rombs/romb-6.png");
+}
+
+.image-7 {
+  background-image: url("./img/rombs/romb-7.png");
+}
+
+.main-image>a {
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Open Sans";
 }
 
 //portfolio
@@ -123,7 +199,7 @@ p {
   color: #000000;
   font-weight: 700;
   font-family: "Roboto";
-  padding-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .style-header.white {
@@ -135,7 +211,7 @@ p {
 }
 
 .block>p {
-  padding-bottom: 35px;
+  margin-bottom: 35px;
   font-size: 15px;
   line-height: 23px;
   color: #000000;
@@ -146,7 +222,8 @@ p {
 .block-items,
 .block-images  {
   display: flex;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .block-item {
@@ -164,12 +241,11 @@ p {
 
 .block-item:after {
   content:'';
+  height: 7px;
   display: block;
 }
 
-.block-item:hover:after {
-  content: '';
-  height: 7px;
+.block-item:hover:after {  
   background-color: #9e130c;
 }
 
@@ -193,7 +269,6 @@ p {
   background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
-  //background-position: 55% 6%;
 }
 
 .portfolio-1 {
@@ -217,7 +292,9 @@ p {
 }
 
 .block-button {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 122px;
   height: 44px;
   background-color: #b4b4b4;
@@ -229,7 +306,6 @@ p {
   background-color: #9e130c;
   border: 3px solid #9e130c;
 }
-
 
 //services
 
