@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import "./partials/portfolio/portfolio.scss";
+@import './partials/portfolio/portfolio.scss';
+@import './partials/mainblock/mainblock.scss';
 
 body * {
   outline: 1px solid lightgrey;
@@ -52,6 +53,7 @@ p {
   display: block;
 }
 
+.header-item:nth-child(2),
 .header-item:last-child {
   margin-right: 0;
 }
@@ -78,7 +80,7 @@ p {
   width: 270px;
   text-align: center;
   padding-right: 35px;
-  padding-left: 15px;
+  padding-left: 35px;
 }
 
 .header-logo a>img {
@@ -118,7 +120,6 @@ p {
   width: 270px;
   height: 270px;
 }
-
 
 .services-1,
 .services-2,
