@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body * {
   outline: 1px solid lightgrey;
 }
@@ -5,6 +8,7 @@ body * {
 body {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h2,
@@ -19,6 +23,7 @@ p {
 .header {
   background-color: #131313; 
   position: fixed;
+  z-index: 3;
   width: 100%;
 }
 
@@ -57,7 +62,6 @@ p {
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
-  font-family: "Open Sans";
 }
 
 .header-item a:hover {
@@ -94,91 +98,6 @@ p {
   width: 100%;
 }
 
-.main {
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-}
-
-.main-image {
-  width: 270px;
-  height: 270px;
-  border-radius: 135px;
-  background-color: #dbdfe1;
-  clip-path: polygon(50% 0,100% 50%, 50% 100%, 0% 50%);
-}
-
-.main-image:nth-child(odd) {
-  position: relative;
-}
-
-.main-image:nth-child(even) {
-  background-color: #e6e6e6af;
-  position: absolute;
-  top:52%;
-}
-
-.main-image:nth-child(2) {
-  left: 21%;
-}
-
-.main-image:nth-child(4) {
-  left: 41.2%;
-}
-
-.main-image:nth-child(6) {
-  left: 61.5%;
-}
-
-.main-image:hover {
-  cursor: pointer;
-  background-color: #9e130c;
-}
-
-.img-bg {
-  background-repeat: no-repeat;
-  max-width: 270px;
-  height: 270px;
-  background-position: 50%;
-}
-
-.image-1 {
-  background-image: url("./img/rombs/romb-1.png");
-}
-
-.image-2 {
-  background-image: url("./img/rombs/romb-2.png");
-}
-
-.image-3 {
-  background-image: url("./img/rombs/romb-3.png");
-}
-
-.image-4 {
-  background-image: url("./img/rombs/romb-4.png");
-}
-
-.image-5 {
-  background-image: url("./img/rombs/romb-5.png");
-}
-
-.image-6 {
-  background-image: url("./img/rombs/romb-6.png");
-}
-
-.image-7 {
-  background-image: url("./img/rombs/romb-7.png");
-}
-
-.main-image>a {
-  font-size: 20px;
-  line-height: 23px;
-  color: #ffffff;
-  font-weight: 700;
-  font-family: "Open Sans";
-}
-
 //portfolio
 
 .portfolio,
@@ -198,7 +117,7 @@ p {
   line-height: 23px;
   color: #000000;
   font-weight: 700;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 40px;
 }
 
@@ -216,7 +135,6 @@ p {
   line-height: 23px;
   color: #000000;
   font-weight: 400;
-  font-family: "Open Sans";
 }
 
 .block-items,
@@ -231,7 +149,6 @@ p {
   line-height: 23px;
   color: #000000;
   font-weight: 700;
-  font-family: "Open Sans";
   margin-right: 50px;
 }
 
