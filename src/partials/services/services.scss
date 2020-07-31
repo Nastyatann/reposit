@@ -1,0 +1,32 @@
+.services {
+    background-color: #e8e8e8; 
+}
+  
+.services .block-image {
+    width: 270px;
+    height: 270px;
+}
+  
+.services-1,
+.services-2,
+.services-3,
+.services-4 {
+    background-repeat: no-repeat;
+    background-position: 55% 6%;
+}
+  
+.services-1 {
+    background-image: url("./img/services/serv-1.jpg");
+}
+  
+.services-2 {
+    background-image: url("./img/services/serv-2.jpg");
+}
+  
+.services-3 {
+    background-image: url("./img/services/serv-3.jpg");
+}
+  
+.services-4 {
+    background-image: url("./img/services/serv-4.jpg"); 
+}

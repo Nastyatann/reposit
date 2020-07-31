@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./main.scss">
     <title>German invest group</title>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -40,45 +45,11 @@
         <!-- Portfolio -->
         @@include('./partials/portfolio/_portfolio.html')
         <!-- Services -->
-        <div id=2 class="services">
-          <div class="container">
-            <div class="block">
-              <h2 class="style-header">Услуги</h2>
-              <p>
-                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, 
-                но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., 
-                то есть более двух тысячелетий назад. 
-              </p>
-              <div class="block-items">
-                <div class="block-item">Graphic Design</div>
-                <div class="block-item">Illustration</div>
-                <div class="block-item">Web Design</div>
-                <div class="block-item">Photography</div>
-              </div>
-              <div class="block-images">
-                <div class="block-image services-1"></div>
-                <div class="block-image services-2"></div>
-                <div class="block-image services-3"></div>
-                <div class="block-image services-4"></div>
-              </div>
-              <div class="block-button">
-                Еще работы
-              </div>
-            </div>            
-          </div>
-        </div>
+        @@include('./partials/services/_services.html')
         <!-- Feedback -->
-        <div id=3 class="feedback">
-          <div class="container">
-            <h2 class="style-header white">Отзывы</h2>
-          </div>
-        </div>
+        @@include('./partials/feedback/_feedback.html')
         <!-- Contacts -->
-        <div id=4 class="contacts">
-          <div class="container">
-            <h2 class="style-header white">Контакты</h2>
-          </div>
-        </div>
+        @@include('./partials/contacts/_contacts.html')
         <!-- Footer -->
         <div class="footer">
           <div class="container">

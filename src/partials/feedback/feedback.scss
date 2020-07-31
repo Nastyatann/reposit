@@ -1,0 +1,42 @@
+.feedback {
+    background-color: #3a3a3a;
+}
+
+.feedback-slider__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-right: 35%;
+}
+
+.feedback-image {
+    margin-right: 30px;
+}
+
+.feedback-image img {
+    height: 140px;
+}
+
+.feedback-text {
+    font-size: 12px;
+    line-height: 23px;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.feedback-text p:last-child {
+    padding-top: 25px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.feedback-text p:first-child {
+    font-size: 17px;
+    line-height: 23px;
+    color: #ffffff;
+    font-weight: 700;
+}

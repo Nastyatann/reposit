@@ -1,0 +1,162 @@
+.contacts {
+    background-color: #131313;
+}
+  
+.contacts-block {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+  
+.contacts-block__info {
+    max-width: 35%;
+    background-color: #9e130c;
+    padding: 40px;
+}
+  
+.contacts-block__title {
+    padding-bottom: 25px;
+}
+  
+.contacts-block__text {
+    font-size: 17px;
+    padding-bottom: 25px;
+}
+ 
+.contacts-block__text:last-child {
+    padding-bottom: 0;
+}
+  
+.contacts-block__forms {
+    width: 60%;
+    font-size: 20px;
+    padding-left: 30px;
+}
+  
+form {
+    display:flex;
+    justify-content: space-between;
+}
+  
+.forms-title {
+    padding-bottom: 30px;
+}
+  
+.forms-left {
+    width: 40%;
+}
+  
+.forms-right {
+    width: 55%;
+}
+  
+.forms-left,
+.forms-right {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+form label,
+form p {
+    font-size: 15px;
+    line-height: 23px;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Open Sans";
+}
+  
+form p {
+    padding-bottom: 10px;
+}
+  
+.forms-left div:last-child p:after {
+    font-size: 0;
+}
+  
+form label input,
+form label textarea {
+    display: block;
+    width: 97%;
+}
+  
+form label input {
+    height: 37px;
+}
+  
+.forms-left div {
+    margin-bottom: 20px;
+}
+
+.forms-left div:last-child {
+    margin-bottom: 0;
+}
+  
+form label textarea {
+    height: 128px;
+    max-width: 100%;
+}
+  
+label p:after {
+    content: '*';
+    padding-left: 5px;
+}
+  
+.forms-right button{
+    align-self: flex-end;
+}
+  
+.forms-right>p {
+    font-size: 13px;
+}
+  
+input:focus, 
+textarea:focus {
+   background-color: #b3b3b3;
+}
+  
+.forms-right button {
+    width: 115px;
+    height: 44px;
+    font-size: 15px;
+    line-height: 23px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+    background-color: #b4b4b4;
+    border: 3px solid #9e130c;  
+}
+  
+.forms-right button:hover,
+.forms-right button:focus {
+    background-color: #9e130c;
+    cursor: pointer;
+}
+  
+.forms-right button:active {
+    background-color: #065d92;
+}
+  
+.contacts-map {
+    overflow: hidden;
+    padding-bottom: 45%;
+    position: relative;
+    height: 0;
+    border: 5px solid #ffffff;
+}
+  
+.contacts-map div{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+  

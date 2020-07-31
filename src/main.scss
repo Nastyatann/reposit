@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import './partials/portfolio/portfolio.scss';
 @import './partials/mainblock/mainblock.scss';
+@import './partials/contacts/contacts';
+@import './partials/services/services.scss';
+@import './partials/feedback/feedback.scss';
 
 body * {
   outline: 1px solid lightgrey;
@@ -19,7 +22,6 @@ p {
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding: 8px 0;
 }
 
 .header {
@@ -27,6 +29,7 @@ p {
   position: fixed;
   z-index: 3;
   width: 100%;
+  border-bottom: 3px solid #065d92;
 }
 
 .container {
@@ -108,53 +111,6 @@ p {
 .feedback,
 .contacts {
   padding: 65px 0 75px 0;
-}
-
-//services
-
-.services {
-  background-color: #e8e8e8;
-}
-
-.services .block-image {
-  width: 270px;
-  height: 270px;
-}
-
-.services-1,
-.services-2,
-.services-3,
-.services-4 {
-  background-repeat: no-repeat;
-  background-position: 55% 6%;
-}
-
-.services-1 {
-  background-image: url("./img/services/serv-1.jpg");
-}
-
-.services-2 {
-  background-image: url("./img/services/serv-2.jpg");
-}
-
-.services-3 {
-  background-image: url("./img/services/serv-3.jpg");
-}
-
-.services-4 {
-  background-image: url("./img/services/serv-4.jpg"); 
-}
-
-//feedback
-
-.feedback {
-  background-color: #3a3a3a;
-}
-
-//contacts
-
-.contacts {
-  background-color: #131313;
 }
 
 //footer
