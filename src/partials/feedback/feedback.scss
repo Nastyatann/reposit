@@ -12,13 +12,20 @@
 
 .feedback-image {
     margin-right: 30px;
+    height: 140px;
+    width: 170px;
+    overflow: hidden;
 }
 
 .feedback-image img {
-    height: 140px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .feedback-text {
+    width: 90%;
     font-size: 12px;
     line-height: 23px;
     color: #ffffff;
@@ -39,4 +46,33 @@
     line-height: 23px;
     color: #ffffff;
     font-weight: 700;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    width: 25px;
+    height: 25px;
+    font-size: 0;
+}
+
+.slick-arrow.slick-prev{
+    left:15%;
+    background: url('/src/img/feedback/left-chervon.png') 0 0 / 100% no-repeat;
+}
+
+.slick-arrow.slick-next{
+    right: 75%;
+    background: url("/src/img/feedback/right-chervon.png") 0 0 / 100% no-repeat;
+}
+
+.slick-slider button {
+   // width: 25px;
+   // height: 25px;
+    //background-color: #707070;
+}
+
+.slick-slider button:hover {
+    //background-color: #b7b7b7;
 }

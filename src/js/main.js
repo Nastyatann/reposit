@@ -1,7 +1,7 @@
 //$('.single-item').slick();
 $(document).ready(function(){
     $('.your-class').slick({
-        autoplay:true,
+       // autoplay:true,
         adaptiveHeight:true
     });
   });
