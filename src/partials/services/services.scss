@@ -30,3 +30,10 @@
 .services-4 {
     background-image: url("./img/services/serv-4.jpg"); 
 }
+
+#tab1:checked ~ .content-1,
+#tab2:checked ~ .content-2,
+#tab3:checked ~ .content-3,
+#tab4:checked ~ .content-4 {
+    display: block;
+}
