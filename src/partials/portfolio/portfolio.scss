@@ -122,6 +122,14 @@
     display: block;
 }
 
+#tab-1:checked ~ .block-item.active-1:after,
+#tab-2:checked ~ .block-item.active-2:after,
+#tab-3:checked ~ .block-item.active-3:after,
+#tab-4:checked ~ .block-item.active-4:after,
+#tab-5:checked ~ .block-item.active-5:after {
+    background-color: #9e130c;
+}
+
 .block-button {
     display: flex;
     align-items: center;

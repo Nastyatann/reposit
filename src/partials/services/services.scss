@@ -37,3 +37,10 @@
 #tab4:checked ~ .content-4 {
     display: block;
 }
+
+#tab1:checked ~ .block-item.active-1:after,
+#tab2:checked ~ .block-item.active-2:after,
+#tab3:checked ~ .block-item.active-3:after,
+#tab4:checked ~ .block-item.active-4:after {
+    background-color: #9e130c;
+}

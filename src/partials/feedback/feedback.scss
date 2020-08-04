@@ -57,22 +57,28 @@
     font-size: 0;
 }
 
-.slick-arrow.slick-prev{
-    left:15%;
-    background: url('/src/img/feedback/left-chervon.png') 0 0 / 100% no-repeat;
-}
-
-.slick-arrow.slick-next{
-    right: 75%;
-    background: url("/src/img/feedback/right-chervon.png") 0 0 / 100% no-repeat;
-}
-
-.slick-slider button {
-   // width: 25px;
-   // height: 25px;
-    //background-color: #707070;
+button {
+    border: 5px solid #707070;
+    background-color: #707070;
 }
 
 .slick-slider button:hover {
-    //background-color: #b7b7b7;
+   background-color: #b7b7b7;
+   border: 5px solid #b7b7b7;
+}
+
+.slick-arrow.slick-prev, 
+.slick-arrow.slick-next {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slick-arrow.slick-prev {
+    left: 15%;
+    background-image: url("./img/feedback/left-chevron.png");
+}
+
+.slick-arrow.slick-next{
+    right: 80%;
+    background-image: url("./img/feedback/right-chevron.png");
 }
