@@ -10,28 +10,26 @@
     position: relative;
     width: 270px;
     height: 270px;
-    
   }
-  
-  .main-image:nth-child(odd) {
-   //position: relative;
-  }
-  
-  .main-image:nth-child(even) {
-    position: absolute;
-    top: 50%;
-  }
-  
-  .main-image:nth-child(2) {
-    left: 26.2%;
-  }
-  
+
+  .main-image:nth-child(1),
+  .main-image:nth-child(2),
+  .main-image:nth-child(3),
   .main-image:nth-child(4) {
-    left: 42.8%;
+    top: 13%;
+  }
+  
+  
+  .main-image:nth-child(5) {
+    left: 13%;
   }
   
   .main-image:nth-child(6) {
-    left: 59.5%;
+    //left: 42.8%;
+  }
+  
+  .main-image:nth-child(7) {
+    left: -13%
   }
   
   .main-image:hover {
@@ -50,7 +48,9 @@
     transform: rotate(45deg);
   }
 
-  .main-image:nth-child(even):after {
+  .main-image:nth-child(5):after,
+  .main-image:nth-child(6):after,
+  .main-image:nth-child(7):after {
     background-color: #e6e6e6af;
   }
 
@@ -72,7 +72,7 @@
   }
   
   .image-2 {
-    background-image: url("./img/rombs/romb-2.png");
+    background-image:  url("./img/rombs/romb-2.png");
   }
   
   .image-3 {
@@ -100,4 +100,8 @@
     line-height: 23px;
     color: #ffffff;
     font-weight: 700;
+  }
+
+  @media (max-width: 1170px) {
+    
   }
