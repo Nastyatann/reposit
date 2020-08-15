@@ -49,6 +49,7 @@
     font-weight: 700;
     margin-right: 50px;
     margin-bottom: 40px;
+    white-space: nowrap;
 }
 
 .block-item:hover { 
@@ -63,6 +64,7 @@
   
 .block-item:hover:after {  
     background-color: #9e130c;
+    transition: 0.5s;
 }
 
 .block-image {
@@ -144,5 +146,6 @@
     cursor: pointer;
     background-color: #9e130c;
     border: 3px solid #9e130c;
+    transition: 0.3s;
 }
 

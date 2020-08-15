@@ -139,6 +139,7 @@ textarea:focus {
 .forms-right button:focus {
     background-color: #9e130c;
     cursor: pointer;
+    transition: 0.5s;
 }
   
 .forms-right button:active {
