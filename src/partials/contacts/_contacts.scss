@@ -1,4 +1,4 @@
-.contacts {
+.bg-contacts {
     background-color: #131313;
 }
   
@@ -6,9 +6,8 @@
     max-width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-bottom: 40px;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 25px;
     color: #ffffff;
     font-weight: 700;
@@ -26,7 +25,7 @@
 }
   
 .contacts-block__text {
-    font-size: 17px;
+    font-size: 1.06rem;
     padding-bottom: 25px;
 }
  
@@ -36,7 +35,7 @@
   
 .contacts-block__forms {
     width: 60%;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding-left: 30px;
 }
   
@@ -66,8 +65,8 @@ form {
   
 form label,
 form p {
-    font-size: 15px;
-    line-height: 23px;
+    font-size: 0.94rem;
+    line-height: 1.44rem;
     color: #ffffff;
     font-weight: 400;
     font-style: italic;
@@ -89,7 +88,7 @@ form label textarea {
 }
   
 form label input {
-    height: 37px;
+    height: 2.3rem;
 }
   
 .forms-left div {
@@ -101,7 +100,7 @@ form label input {
 }
   
 form label textarea {
-    height: 128px;
+    height: 8rem;
     max-width: 100%;
 }
   
@@ -115,7 +114,7 @@ label p:after {
 }
   
 .forms-right>p {
-    font-size: 13px;
+    font-size: 0.81rem;
 }
   
 input:focus, 
@@ -126,8 +125,8 @@ textarea:focus {
 .forms-right button {
     width: 115px;
     height: 44px;
-    font-size: 15px;
-    line-height: 23px;
+    font-size: 0.94rem;
+    line-height: 1.44rem;
     color: #ffffff;
     font-weight: 400;
     font-family: "Open Sans";
@@ -162,3 +161,74 @@ textarea:focus {
     position: absolute;
 }
   
+
+@media (max-width: 1100px) {
+
+    .forms-left,
+    .forms-right {
+        width: 45%;
+    }
+
+    .forms-left {
+        margin-bottom: 20px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .contacts-block {
+        display: block;
+    }
+
+    .contacts-block__info {
+        max-width: 50%;
+        padding: 40px;
+        margin-left: 30px;
+    }
+
+    .contacts-block__forms {
+       width: 95%;
+       display: block;
+       padding-top: 45px;
+    }
+
+    .contacts-block__forms {
+        width: 90%;
+    }
+
+    form label textarea {
+        height: 5rem;
+    }
+
+    .forms-title {
+        margin-right: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .contacts-block__info {
+        max-width: 90%;
+        padding: 30px;
+        margin-left: 0;    
+    }
+
+    form {
+        display: block;
+    }
+
+    .forms-title {
+        margin-right: 0;
+        padding-bottom: 15px;
+    }
+
+    .contacts-block__forms {
+        padding-top: 30px;
+    }
+
+    .forms-left, .forms-right {
+        width: 90%;
+    }
+}
+

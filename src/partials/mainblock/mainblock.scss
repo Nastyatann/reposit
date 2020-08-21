@@ -1,184 +1,178 @@
+.main-bg {
+  background-image: url("./img/rombs/romb-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
 .main {
-    display:flex;
-    align-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 100vh;
-    position: relative;
-  }
+  padding-top: 120px;
+}
+
+.rhombus {
+  display:flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10vmin 0;
+}
   
+.main-image {
+  width: 270px;
+  height: 270px;
+  margin: 5px;
+  clip-path: polygon(50% 0,100% 50%, 50% 100%, 0% 50%);
+}
+
+.main-image:nth-child(5),
+.main-image:nth-child(6),
+.main-image:nth-child(7) {
+  margin-top: -10%;
+}
+    
+.main-image:nth-child(5) {
+  margin-left: 12%;
+}
+  
+.main-image:nth-child(7) {
+  margin-right: 12%;
+}
+    
+.img-bg {
+  background-color: #dbdfe1;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 270px;
+  background-position: 50%;
+}
+
+.image-1 {
+  background-image: url("./img/rombs/romb-1.png");
+}
+  
+.image-2 {
+  background-image:  url("./img/rombs/romb-2.png");
+}
+  
+.image-3 {
+  background-image: url("./img/rombs/romb-3.png");
+}
+  
+.image-4 {
+  background-image: url("./img/rombs/romb-4.png");
+}
+  
+.image-5 {
+  background-color: #e6e6e6af;
+  background-image: url("./img/rombs/romb-5.png");
+}
+  
+.image-6 {
+  background-color: #e6e6e6af;
+  background-image: url("./img/rombs/romb-6.png");
+}
+  
+.image-7 {
+  background-color: #e6e6e6af;
+  background-image: url("./img/rombs/romb-7.png");
+}
+  
+.main-image>a {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.44rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.main-image:hover .img-bg {
+  cursor: pointer;
+  background-color: #9e130c;
+  transition: 0.8s;
+}
+
+@media (max-width: 1170px) {
+
   .main-image {
-    position: relative;
-    width: 270px;
-    height: 270px;;
-    clip-path: polygon(50% 0,100% 50%, 50% 100%, 0% 50%);
+    width: 250px;
+    height: 250px;
   }
 
-  .main-image:nth-child(1),
-  .main-image:nth-child(2),
-  .main-image:nth-child(3),
-  .main-image:nth-child(4) {
-    top: 13%;
-  }
-    
-  .main-image:nth-child(5) {
-    right: -13%;
-  }
-  
-  .main-image:nth-child(7) {
-    right: 13%;
-  }
-    
   .img-bg {
-    position: relative;
-    z-index: 5;
-    background-color: #dbdfe1;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: 270px;
-    background-position: 50%;
+    height: 250px;
+  }   
+}
+
+@media (max-width: 1090px) {
+
+  .rhombus {
+    padding: 3vmin 0;
   }
 
-  .image-1 {
-    background-image: url("./img/rombs/romb-1.png");
-  }
-  
-  .image-2 {
-    background-image:  url("./img/rombs/romb-2.png");
-  }
-  
-  .image-3 {
-    background-image: url("./img/rombs/romb-3.png");
-  }
-  
-  .image-4 {
-    background-image: url("./img/rombs/romb-4.png");
-  }
-  
-  .image-5 {
-    background-color: #e6e6e6af;
-    background-image: url("./img/rombs/romb-5.png");
-  }
-  
-  .image-6 {
-    background-color: #e6e6e6af;
-    background-image: url("./img/rombs/romb-6.png");
-  }
-  
-  .image-7 {
-    background-color: #e6e6e6af;
-    background-image: url("./img/rombs/romb-7.png");
-  }
-  
-  .main-image>a {
-    font-size: 20px;
-    line-height: 23px;
-    color: #ffffff;
-    font-weight: 700;
+  .main-image:nth-child(5),
+  .main-image:nth-child(6),
+  .main-image:nth-child(7) {
+    margin: 5px;
   }
 
-  .main-image:hover .img-bg {
-    cursor: pointer;
-    background-color: #9e130c;
-    transition: 0.8s;
-  }
-
-  @media (max-width: 1170px) {
-
-    .main-image {
-      position: absolute;
-    }
-
-    .main-image:nth-child(1),
-    .main-image:nth-child(2) {
-      top: 20%;
-    }
-
-    .main-image:nth-child(1) {
-      left: 19%;
-    }
-
-    .main-image:nth-child(2) {
-      right: 19%;
-    } 
-
-    .main-image:nth-child(3) {
-      top: 40%;
-      left: 0%;
-    }
-
-    .main-image:nth-child(4) {
-      right: 37%;
-      top: 40%;
-    } 
-
-    .main-image:nth-child(5) {
-      right: 0;
-      top: 40%;
-    }
-
-    .main-image:nth-child(6)  {
-      left: 19%;
-      top: 60%;
-    }
-
-    .main-image:nth-child(7) {
-      right: 19%;
-      top: 60%;
-    }
-
-    .main-image {
-      width: 250px;
-      height: 250px;
-    }
-
-    .img-bg {
-      height: 250px;
-    }
-  }
-
-  @media (max-width: 990px) {
+  .main-image:nth-child(4),
+  .main-image:nth-child(6) {
+    margin-left: 15%;
     
-    .main-image {
-      width: 200px;
-      height: 200px;
-    }
-
-    .img-bg {
-      height: 200px;
-    }
-
-    .main-image:nth-child(2) {
-      top: 15%;
-      left: 37%;
-    }
-
-    .main-image:nth-child(5) {
-      right: 37%;
-      top: 70%;
-    }
-
-    .main-image:nth-child(4) {
-      top: 42%;
-    }
-
-    .main-image:nth-child(1),
-    .main-image:nth-child(3) {
-      top: 28%;
-    }
-
-    .main-image:nth-child(6),
-    .main-image:nth-child(7)  {
-      top: 56%;
-    }
-
-    .main-image:nth-child(1),
-    .main-image:nth-child(6)  {
-      left: 0;
-    }
-   
-    .main-image:nth-child(3),
-    .main-image:nth-child(7)  {
-      right: 0;
-    }
   }
+
+  .main-image:nth-child(5),
+  .main-image:nth-child(7) {
+    margin-right: 15%;
+  }
+
+  .main-image:nth-child(4),
+  .main-image:nth-child(5) {
+    margin-top: -10%;
+  }
+}
+
+@media (max-width: 830px) {
+
+  .main-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .img-bg {
+    height: 200px;
+  }   
+}
+  
+@media (max-width: 660px) {
+
+  .main-image:nth-child(3) {
+    margin-left: 20%;
+    margin-right: 20%; 
+  }
+
+  .main-image:nth-child(4),
+  .main-image:nth-child(5),
+  .main-image:nth-child(6),
+  .main-image:nth-child(7) {
+    margin: 6px;
+  }
+
+  .main-image:nth-child(3),
+  .main-image:nth-child(4),
+  .main-image:nth-child(5) {  
+    margin-top: -10%;
+  }
+}
+
+@media (max-width: 470px) {
+
+  .main-image {
+    width: 40%;
+    height: 150px;
+  }
+
+  .img-bg {
+    height: 150px;
+  }
+}

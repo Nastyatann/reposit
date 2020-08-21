@@ -1,4 +1,4 @@
-.feedback {
+.bg-feedback {
     background-color: #3a3a3a;
 }
 
@@ -26,8 +26,8 @@
 
 .feedback-text {
     width: 90%;
-    font-size: 12px;
-    line-height: 23px;
+    font-size: 0.75rem;
+    line-height: 1.44rem;
     color: #ffffff;
     font-weight: 400;
     font-style: italic;
@@ -35,15 +35,15 @@
 
 .feedback-text p:last-child {
     padding-top: 25px;
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 0.94rem;
+    line-height: 1.5rem;
     color: #ffffff;
     font-weight: 400;
 }
 
 .feedback-text p:first-child {
-    font-size: 17px;
-    line-height: 23px;
+    font-size: 1.06rem;
+    line-height: 1.44rem;
     color: #ffffff;
     font-weight: 700;
 }
@@ -81,4 +81,39 @@ button {
 .slick-arrow.slick-next{
     right: 80%;
     background-image: url("./img/feedback/right-chevron.png");
+}
+
+@media (max-width: 1170px) {
+
+    .slick-arrow.slick-next {
+        right: 75%;
+     }
+ 
+}
+
+@media (max-width: 768px) {
+
+    .slick-arrow.slick-next {
+        right: 70%;
+     }
+ 
+    .feedback-slider__item {
+       margin-right: 3%;
+       margin-left: 3%
+    }
+}
+
+@media (max-width: 550px) {
+
+    .slick-arrow.slick-next {
+       right: 60%;
+    }
+
+    .feedback-slider__item {
+        display: block;
+    }
+
+    .slick-slider  {
+        padding-left: 10px;
+    }
 }

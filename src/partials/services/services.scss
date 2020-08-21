@@ -1,4 +1,4 @@
-.services {
+.bg-services {
     background-color: #e8e8e8; 
 }
   
@@ -43,4 +43,20 @@
 #tab3:checked ~ .block-item.active-3:after,
 #tab4:checked ~ .block-item.active-4:after {
     background-color: #9e130c;
+}
+
+@media (max-width: 700px) {
+
+    .services .block-image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .services .block-image {
+        width: 200px;
+        height: 200px;
+    }
 }

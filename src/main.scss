@@ -31,13 +31,19 @@ p, ul {
   position: fixed;
   z-index: 10;
   width: 100%;
+  height: 120px;
   border-bottom: 3px solid #065d92;
+  box-sizing: border-box;
 }
 
 .container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.burger {
+  display: none;
 }
 
 .header-menu {
@@ -67,8 +73,8 @@ p, ul {
   text-decoration: none;
   padding: 0 15px;
   color: #b3b3b3;
-  font-size: 17px;
-  line-height: 30px;
+  font-size: 1.06rem;
+  line-height: 1.88rem;
   font-weight: 700;
 }
 
@@ -93,26 +99,119 @@ p, ul {
   max-width: 100%;
 }
 
+@media (max-width: 990px) {
+ 
+  html {
+    font-size: 14px;
+  }
+
+  .header-logo {
+    width: 200px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .main {
+    padding-top: 50px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    height: 50px; 
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+
+  .burger:before,
+  .burger:after {
+    content: '';
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .burger:before {
+    top: 0;
+  }
+
+  .burger:after {
+    bottom: 0;
+  }
+
+  .burger span {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+
+  }
+
+  .header {
+    height: 50px;
+  }
+
+  .header-menu {
+    position:absolute;
+    flex-direction: column;
+    left: -100%;
+    top: 50px;
+    min-width: 50%;
+    padding: 0 20px 20px;
+    background-color:#065d92;
+    align-items: flex-start;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header-item {
+    margin-top: 30px;
+  }
+  
+  .header-menu.active {
+    left: 0;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  
+  .burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .burger.active span {
+    transform: scale(0);
+  }
+}
+
 // main-content
 
 .wrapper {
   width: 100%;
 }
 
-.main-bg {
-  height: 100vh;
-  background-image: url("./img/rombs/romb-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-}
+//content
 
-//portfolio
-
-.portfolio,
-.services,
-.feedback,
-.contacts {
+.section {
   padding: 65px 0 75px 0;
 }
 
@@ -121,8 +220,8 @@ p, ul {
 .footer {
   padding: 25px 0;
   background-color: #000000;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 1.06rem;
+  line-height: 1.25rem;
   color: #ffffff;
   font-family: "Font Awesome";
 }

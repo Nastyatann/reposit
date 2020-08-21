@@ -2,6 +2,12 @@
 $(document).ready(function(){
     $('.your-class').slick({
        // autoplay:true,
-        adaptiveHeight:true
+        
     });
   });
+
+$(document).ready(function(){
+   $('.burger').click(function(event) {
+      $('.burger,.header-menu').toggleClass('active');
+   });
+});  
